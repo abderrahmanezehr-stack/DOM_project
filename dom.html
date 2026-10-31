@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+
+  <h1>THE TITLE OF YOUR WEBPAGE</h1>
+  <div id="container">
+    <div class="content">This is the glorious text-content!</div>
+  </div>
+   <button id="one">Click Me</button>
+</body>
+<script > 
+             const button = document.querySelector("#one");
+             button.addEventListener("click" , newhtml , {once : TouchEvent});
+             function newhtml(){ 
+             const content = document.createElement('p') ;
+             const container = document.querySelector("#container");
+             content.textContent = "Hi! i am blue" ;
+             content.style.color = "blue";
+             const h3 = document.createElement("h3");
+             h3.textContent = "Hi iam h3" ;
+             const div = document.createElement("div");
+             div.style.border = "10px solid black";
+             const h1 = document.createElement("h1");
+             h1.textContent = "I am in a div" ;
+             const p = document.createElement('p');
+             p.textContent = "Me too!";
+             div.append(h1 , p);
+             container.append(content ,div , h3); }
+             
+    </script>
+</html>
